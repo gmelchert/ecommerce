@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="/img/favicon/manifest.json">-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+
+    <title>Quitanda Online :: Página Principal</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+            <div class="container" id="navPadrao">
+                <a class="navbar-brand" href="javascript:loadPage('main')"><b>Quitanda Online</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="javascript:loadPage('cliente')">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="javascript:loadPage('quemSomos')">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="align-self-end">
+                        <ul class="navbar-nav" id="navegadorCliente">
+                            <li class="nav-item">
+                                <a href="javascript:loadPage('cadastro')" class="nav-link text-white">Quero Me Cadastrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:loadPage('login')" class="nav-link text-white">Entrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
+                                    title="5 produto(s) no carrinho"><small id="carrinhoBadge">5</small></span>
+                                <a href="javascript:loadPage('carrinho')" class="nav-link text-white">
+                                    <i class="bi-cart" style="font-size:24px;line-height:24px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" id="carousel">
+            <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/img/slides/slide01.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="/img/slides/slide01small.jpg" class="d-block d-md-none  w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/img/slides/slide01.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="/img/slides/slide01small.jpg" class="d-block d-md-none  w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/img/slides/slide01.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src="/img/slides/slide01small.jpg" class="d-block d-md-none  w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+            <hr class="mt-3">
+        </div>
+ 
+        <main class="flex-fill">
+            <div class="container" id="mainContent">
+
+            </div>
+        </main>
+
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; 2020 - Quitanda Online Ltda ME<br>
+                        Rua Virtual Inexistente, 171, Compulândia/PC <br>
+                        CPNJ 99.999.999/0001-99
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="javascript:loadPage('privacidade')" class="text-decoration-none text-dark">
+                            Política de Privacidade
+                        </a><br>
+                        <a href="javascript:loadPage('termos')" class="text-decoration-none text-dark">
+                            Termos de Uso
+                        </a><br>
+                        <a href="javascript:loadPage('quemSomos')" class="text-decoration-none text-dark">
+                            Quem Somos
+                        </a><br>
+                        <a href="javascript:loadPage('trocas')" class="text-decoration-none text-dark">
+                            Trocas e Devoluções
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="javascript:loadPage('contato')"class="text-decoration-none text-dark">
+                            Contato pelo Site
+                        </a><br>
+                        E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
+                            email@dominio.com
+                        </a><br>
+                        Telefone: <a href="phone:28999990000" class="text-decoration-none text-dark">
+                            (28) 99999-0000
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./src/js/api.js"></script>
+    <script src="./index.js"></script>
+    <script src="./src/js/libs/lib.js"></script>
+    <script src="./src/js/idb/idb.js"></script>
+</body>
+
+</html>

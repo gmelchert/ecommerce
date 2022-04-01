@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.3",
+    "jquery": "^3.6.0",
+    "mysql2": "^2.3.3",
+    "node": "^17.5.0",
+    "node-fetch": "^3.2.2",
+    "nodemon": "^2.0.15",
+    "phin": "^3.6.1"
+  },
+  "name": "teste",
+  "version": "1.0.0",
+  "main": "./src/js/modules/server.js",
+  "scripts": {
+    "test": "nodemon ./src/js/modules/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

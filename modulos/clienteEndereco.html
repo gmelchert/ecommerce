@@ -1,0 +1,53 @@
+<h1>Minha Conta</h1>
+<div class="row gx-3">
+    <div class="col-4">
+        <div class="list-group">
+            <a href="javascript:loadPage('clienteDados')" class="list-group-item list-group-item-action bg-danger text-light">
+                <i class="bi-person fs-6"></i> Dados Pessoais
+            </a>
+            <a href="javascript:loadPage('clienteContato')" class="list-group-item list-group-item-action">
+                <i class="bi-mailbox fs-6"></i> Contatos
+            </a>
+            <a href="javascript:loadPage('clienteEndereco')" class="list-group-item list-group-item-action">
+                <i class="bi-house-door fs-6"></i> Endereço
+            </a>
+            <a href="javascript:loadPage('clientePedido')" class="list-group-item list-group-item-action">
+                <i class="bi-truck fs-6"></i> Pedidos
+            </a>
+            <a href="javascript:loadPage('clienteFavoritos')" class="list-group-item list-group-item-action">
+                <i class="bi-heart fs-6"></i> Favoritos
+            </a>
+            <a href="javascript:loadPage('clienteSenha')" class="list-group-item list-group-item-action">
+                <i class="bi-lock fs-6"></i> Alterar Senha
+            </a>
+            <a href="javascript:deslogarUsuario()" class="list-group-item list-group-item-action">
+                <i class="bi-door-open fs-6"></i> Sair
+            </a>
+        </div>
+    </div>
+    <div class="col-8">
+        <form action="">
+            <div class="form-floating mb-3 col-md-6 col-lg-4">
+                <input class="form-control" type="text" onchange="atualizarDados()" id="cep" placeholder=" " autofocus />
+                <label for="cep">CEP</label>
+            </div>
+            <div class="mb-3 col-md-6 col-lg-8">
+                <textarea id="endereco" class="form-control text-muted bg-light text" style="height: 58px; font-size: 14px;" 
+                    disabled>Digite o CEP para buscarmos o endereço.</textarea>
+            </div> 
+            <div class="form-floating mb-3 col-md-4">
+                <input class="form-control" type="text" onchange="atualizarDados()" id="numero" placeholder=" " autofocus />
+                <label for="numero">Número</label>
+            </div>
+            <div class="form-floating mb-3 col-md-8">
+                <input class="form-control" type="text" onchange="atualizarDados()" id="comp" placeholder=" " autofocus />
+                <label for="comp">Complemento</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text" onchange="atualizarDados()" id="ref" placeholder=" " autofocus />
+                <label for="ref">Ponto de Referência</label>
+            </div>                           
+        </form>
+    </div>
+</div>
+<script src="../src/js/components/cliente/clienteEndereco.js"></script>

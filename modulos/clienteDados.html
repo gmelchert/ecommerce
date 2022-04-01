@@ -1,0 +1,45 @@
+<h1>Minha Conta</h1>
+<div class="row gx-3">
+    <div class="col-4">
+        <div class="list-group">
+            <a href="javascript:loadPage('clienteDados')" class="list-group-item list-group-item-action bg-danger text-light">
+                <i class="bi-person fs-6"></i> Dados Pessoais
+            </a>
+            <a href="javascript:loadPage('clienteContato')" class="list-group-item list-group-item-action">
+                <i class="bi-mailbox fs-6"></i> Contatos
+            </a>
+            <a href="javascript:loadPage('clienteEndereco')" class="list-group-item list-group-item-action">
+                <i class="bi-house-door fs-6"></i> Endereço
+            </a>
+            <a href="javascript:loadPage('clientePedido')" class="list-group-item list-group-item-action">
+                <i class="bi-truck fs-6"></i> Pedidos
+            </a>
+            <a href="javascript:loadPage('clienteFavoritos')" class="list-group-item list-group-item-action">
+                <i class="bi-heart fs-6"></i> Favoritos
+            </a>
+            <a href="javascript:loadPage('clienteSenha')" class="list-group-item list-group-item-action">
+                <i class="bi-lock fs-6"></i> Alterar Senha
+            </a>
+            <a href="javascript:deslogarUsuario()" class="list-group-item list-group-item-action">
+                <i class="bi-door-open fs-6"></i> Sair
+            </a>
+        </div>
+    </div>
+    <div class="col-8">
+        <form action="">
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text" id="nome" onchange="atualizaDados()" placeholder=" " autofocus />
+                <label for="nome">Nome</label>
+            </div>
+            <div class="form-floating mb-3 col-md-6 col-xl-4">
+                <input class="form-control" type="text" id="cpf" onchange="atualizaDados()" placeholder=" " />
+                <label for="cpf">CPF</label>
+            </div>
+            <div class="form-floating mb-3 col-md-6 col-xl-4">
+                <input class="form-control" type="date" onchange="atualizaDados()" id="data" placeholder=" " />
+                <label for="data">Data de Nascimento</label>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../src/js/components/cliente/clienteDados.js"></script>
